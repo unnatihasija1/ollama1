@@ -33,12 +33,12 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: <YOUR_DOCKER_SECRET>
+        - name: dckr_pat_SRtihv6tExgmfAtRFoYIm9yn5t0
         minReplicas: 1
         maxReplicas: 1
         containers:
         - name: kserve-container
-          image: docker.io/<YOUR_DOCKER_USER>/ollama:ai-core
+          image: docker.io/unnatihasija/ollama:ai-core
           ports:
             - containerPort: 8080
               protocol: TCP
